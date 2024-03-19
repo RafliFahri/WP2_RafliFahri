@@ -7,5 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-//Tugas Pertemuan 1
-$routes->get('/contoh1', 'Contoh1::index');
+// Tugas Pertemuan 2
+$routes->get('/penjumlahan', 'Latihan1::index');
+$routes->get('/penjumlahan/(:num)/(:num)', 'Latihan1::penjumlahan/$1/$2');
