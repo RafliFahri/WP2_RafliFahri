@@ -7,6 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-// Tugas Pertemuan 3
-$routes->get('/web', 'Web::index');
-$routes->get('/web/about', 'Web::about');
+// Tugas Pertemuan 4
+$routes->get('/matakuliah', 'Matakuliah::index', ['as' => 'form-matkul']);
+$routes->post('/matakuliah/cetak', 'Matakuliah::cetak');
