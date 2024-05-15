@@ -7,6 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-// Tugas Pertemuan 4
-$routes->get('/matakuliah', 'Matakuliah::index', ['as' => 'form-matkul']);
-$routes->post('/matakuliah/cetak', 'Matakuliah::cetak');
+// Tugas Pertemuan 6 Di-Lemas
+$routes->get('/dilemas', 'DiLemas::index');
+$routes->post('/dilemas/create', 'DiLemas::create');
+$routes->post('/dilemas/update', 'DiLemas::update');
+$routes->delete('/dilemas/delete/(:num)', 'DiLemas::delete/$1');
